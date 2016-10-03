@@ -2,91 +2,150 @@
 <html>
 
 <head>
-      <title>
-            <b>Ashutosh Homepage</b>
-      </title>
-      <style>
-            body {
-                  background-image: url("images/back-g.jpg")
-            }
-            
-            ul#menu li {
-                  float: left;
-                  display: inline;
-                  display: block;
-                 padding: 8px;
-                  background-color: #dddddd;
-                  overflow: hidden;
-            }
-            
-            .informationContainer {
-                  padding-top: 40px;
-                  padding-left: 20px;
-                  padding-right: 5px;
-                  padding-bottom: 5px;
-                  background-color: white;
-                  margin: 20px;
-                  box-shadow: 5px 5px grey;
-                  margin-bottom: 80px;
-            }
-            
-            .titleContainer {
-                  margin-top: 10px;
-                  margin-left: 30px;
-                  margin-right: 100px;
-            }
-            
-            .MenuOption {
-                  text-shadow: 2px 2px 4px #000000;
-            }
-            
-            #footer {
-                  text-align: Center;
-                  clear: both;
-                  color: white;
-            }
-      </style>
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="js/jquery-1.12.2.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <title>Final</title>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    /* Add a gray background color and some padding to the footer */
+    
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+    h1 {
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    }
+  </style>
 </head>
 
 <body>
-      <div class="titleContainer">
-            <p>
-                  <b> <font size="12" color="Orange">Ashutosh Sharma</font></b>
-            </p>
-            <p>
-                  <b></b><font size="" color="White">Software Development</font></b>
-            </p>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="about.html"></a>
+          </li>
+          <li><a href="flashproject.html">Flash Projects</a></li>
+          <li><a href="work.html">Work Experience</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="project.html">Projects</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>Ashutosh Sharma</h1>
+      <p>Software Development</p>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-3 text-center">
+    <h3>Some of my Work</h3><br>
+    <div class="row">
+
+      <div class="col-sm-3">
+        <p align="center">About Me</p>
+        <a href="about.html">
+          <img src="images/me.svg" class="img-responsive" style="width:50%" alt="Link to About">
+        </a>
       </div>
 
 
-      <div class="MenuOption">
-            <ul id="menu">
-                  <li><a href="index.html"><font color="White">Main</font></a></li>
-                  <li><a href="resume.html"><font color="White">Resume</font></a></li>
-                  <li><a href="hobbies.html"><font color="White">Hobbies</font></a></li>
-                  <li><a href="projects.html"><font color="White">Project</font></a></li>
-                  <li><a href="blogpost_my_blog.html"<font color="White">Blog</font></a></li>
-            </ul>
+      <div class="col-sm-3">
+        <p align="center">Flash Final Project</p>
+        <a href="flashproject.html">
+          <img src="images/project.svg" class="img-responsive" style="width:50%" alt="Link to Flash Project">
+        </a>
       </div>
 
 
-      <div class="informationContainer">
-            <img src="images/myphoto.jpg" height="120" width="120"></img>
-            <h2>About Me</h2>
-            <p>My name is Ashutosh Sharma. Currently, I am studying Software Development in Georgia Gwinnett College. I am planning to graduate on Fall 2016.  Feel free to explore about me. </p>
+      <div class="col-sm-3">
+        <p align="center">Work Experience
+        </p>
+        <a href="work.html">
+          <img src="images/experience.svg" class="img-responsive" style="width:50%" alt="Link to Work Experience">
+        </a>
       </div>
 
-      <div id="footer">
-            <p>Copyright</p>
-            <p>Contact Info</p>
-            <p><a href="mailto:asharma2@ggc.edu"><font color="White">asharma2@ggc.edu</a></p>
 
-            <p>
-                  <a href="https://www.linkedin.com/in/ashutosh-sharma-551b32b5?trk=nav_responsive_tab_profile">
-                        <img src="images/Linkedin.png" alt="Linkedin" width="40" height="40">
-                  </a>
-            </p>
+      <div class="col-sm-3">
+        <p align="center">Resume</p>
+        <a href="resume.html">
+          <img src="images/resume.svg" class="img-responsive" style="width:50%" alt="Link to Resume">
+        </a>
       </div>
+    </div>
+  </div><br>
+
+  <footer class="container-fluid text-center">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="col-md-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="work.html">Work Experience</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="flashproject.html">Flash Project</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a href="https://www.linkedin.com/in/ashutosh-sharma-551b32b5?trk=nav_responsive_tab_profile">
+    <img src="images/Linkedin.png" alt="Linkedin" width="40" height="40"></a>
+  </footer>
 </body>
+
 
 </html>
